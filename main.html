@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Move Div Example</title>
+    <style>
+        #movableDiv {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        .trail {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(244, 6, 196);
+            opacity: 0.5;
+            z-index: -1; /* Make sure the trail is behind the movableDiv */
+        }
+    </style>
+</head>
+<body>
+    <div id="movableDiv"></div>
+    <script src="main.js"></script>
+</body>
+</html>
